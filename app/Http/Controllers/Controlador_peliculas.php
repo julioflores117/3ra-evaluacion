@@ -17,7 +17,7 @@ class Controlador_peliculas extends Controller
     {
         $Peliculas=DB::table('peliculas')->where('id','=',1)->get();
         
-        return view('la_abuela', array('Peliculas'=>$Peliculas));
+        return view('', array('Peliculas'=>$Peliculas));
         
     }
     public function index2()

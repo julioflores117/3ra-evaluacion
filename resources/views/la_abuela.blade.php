@@ -46,9 +46,9 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										
-										<h2><a >'LA ABUELA'</a></h2>
-										
+										@foreach($Peliculas as $Pelicula)
+										<h2><a >{{$Pelicula->Nombre}}</a></h2>
+										@endforeach
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2015-11-01">Se ha retrasado y, de momento, no tiene fecha.</time>
@@ -57,9 +57,9 @@
 									</div>
 								</header>
 								<a href="" class="image featured"><img src="images/la abuela.jpg" alt="" /></a>
-                               
-                                <p>Director: Artur islas</p>
-								
+                                @foreach($Peliculas as $Pelicula)
+                                <p>Director:{{$Pelicula->Director}} </p>
+								@endforeach
                                         <p>
                                         Argumento:<br> La abuela sigue a Susana, una joven que trabaja como modelo en París, pero se traslada a Madrid para poder cuidar de su abuela Pilar, que acaba de sufrir un derrame. Vuelve a la casa de su infancia, que se convertirá en una auténtica pesadilla.
                                         </p>
